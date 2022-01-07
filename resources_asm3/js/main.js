@@ -108,6 +108,7 @@ startButton.onclick = () => {
     startRound();
 }
 
+//xử lý game over
 function gameOver(str) {
     let currentElement = document.getElementById("currentScore");
     if (str === "win") {
