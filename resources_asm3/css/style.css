@@ -1,0 +1,87 @@
+body {
+    background: darkblue;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    background-color: #00ffff;
+    padding: 20px;
+}
+
+.title-row {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#instructions-title {
+    text-align: center;
+    font-size: 24px;
+    color: #00ffff;
+}
+
+.instructions-row {
+    width: 600px;
+    margin: 0px auto;
+}
+
+ol li {
+    color: white;
+    padding: 10px 0 10px 40px;
+    font-size: 120%;
+}
+
+.door-row {
+    text-align: center;
+    margin-top: 20px auto;
+}
+
+.door {
+    display: inline-block;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+#start {
+    text-align: center;
+    margin: 48px auto;
+    width: 100px;
+    padding: 20px 10px;
+    background: orange;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.score {
+    position: relative;
+    margin: 48px auto;
+    height: 50px;
+    width: 60%;
+}
+
+.score-title {
+    position: absolute;
+    width: 100%;
+    top: -45px;
+}
+
+h3 {
+    display: inline;
+    width: 30px;
+    padding: 0 15%;
+    color: white;
+}
+
+#currentScore,
+#highScore {
+    display: inline-block;
+    height: 100%;
+    width: 19%;
+    margin: 0 15%;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    background-color: aliceblue;
+}
