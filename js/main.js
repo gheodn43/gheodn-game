@@ -2,9 +2,9 @@ var doorImage1 = document.querySelector('#door1');
 var doorImage2 = document.getElementById('door2');
 var doorImage3 = document.getElementById('door3');
 var startButton = document.getElementById('start');
-var botDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg";
-var beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg";
-var spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
+var botDoorPath = "./images/robot.svg";
+var beachDoorPath = "./images/beach.svg";
+var spaceDoorPath = "./images/space.svg";
 var current = 0;
 var highscore = 0;
 var numClosedDoors = 3;
@@ -20,7 +20,7 @@ var currentlyPlaying = true;
 */
 
 function isBot(door) {
-    if (door.src === botDoorPath) {
+    if (door.src.includes(botDoorPath.replace(".", ""))) {
         return true;
     } else {
         return false;
